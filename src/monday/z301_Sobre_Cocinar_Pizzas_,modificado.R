@@ -24,7 +24,7 @@ require("DiceKriging")
 require("mlrMBO")
 
 # Poner la carpeta de la materia de SU computadora local
-setwd("/home/aleb/dmeyf2022")
+setwd("D:/economia_finanzas")
 # Poner sus semillas
 semillas <- c(17, 19, 23, 29, 31)
 
@@ -292,6 +292,17 @@ plotExampleRun(run, iters = 8, densregion = TRUE, pause = FALSE)
 plotExampleRun(run, iters = 9, densregion = TRUE, pause = FALSE)
 plotExampleRun(run, iters = 10, densregion = TRUE, pause = FALSE)
 
+# Comentarios propios
+# En zona sombreada está la función gausseana. El proceso gaussiano ubica el resto de los
+# puntos a ubicar.
+# La función cambia junto con los intervalos a medida que se sumen más puntos.
+# Considera que los puntos dados son los puntos reales de la función.
+
+
+# La curva negra es la ganancia real (no se conoce)
+# El ei tiene máximos donde el intervalo gaussiano ve minimos.
+# Cada iteración va ubicandose en los mínimos de la curva gaussiana
+
 ## ---------------------------
 ## Step 9: Introduciendo la técnica en nuestro conjunto
 ## ---------------------------
@@ -308,6 +319,9 @@ for (v in 4:20) {
 
 ggplot(resultados_maxdepth, aes(md, auc)) + geom_point()
 
+
+# 
+
 ## ---------------------------
 ## Step 9: Buscando con una Opt. Bayesiana para 1 parámetro
 ## ---------------------------
@@ -317,6 +331,8 @@ obj_fun_md <- function(x) {
   experimento_rpart(dataset, semillas, md = x$maxdepth)
 }
 
+
+# Creación de función objetivo simple que minimice 
 obj_fun <- makeSingleObjectiveFunction(
   minimize = FALSE,
   fn = obj_fun_md,
@@ -388,3 +404,100 @@ print(run_md_ms)
 ## Agregue todos los parámetros que considere. Una vez que tenga sus mejores
 ## parámetros, haga una copia del script rpart/z101_PrimerModelo.R, cambie los
 ## parámetros dentro del script, ejecutelo y suba a Kaggle su modelo.
+
+
+# Parametro adicional mean (tarea). 
+
+set.seed(semillas[1])
+obj_fun_md_ms <- function(x) {
+  experimento_rpart(dataset, semillas
+                    , md = x$maxdepth
+                    , ms = x$minsplit
+                    , mb = floor(x$minbucket*x$minsplit))
+}
+
+obj_fun <- makeSingleObjectiveFunction(
+  minimize = FALSE,
+  fn = obj_fun_md_ms,
+  par.set = makeParamSet(
+    makeIntegerParam("maxdepth",  lower = 4L, upper = 20L),
+    makeIntegerParam("minsplit",  lower = 1L, upper = 200L),
+    makeNumericParam("minbucket",lower = 0, upper = 1)
+    # makeNumericParam <- para parámetros continuos
+  ),
+  # noisy = TRUE,
+  has.simple.signature = FALSE
+)
+
+ctrl <- makeMBOControl()
+ctrl <- setMBOControlTermination(ctrl, iters = 30L)
+ctrl <- setMBOControlInfill(
+  ctrl,
+  crit = makeMBOInfillCritEI(),
+  opt = "focussearch",
+  # sacar parámetro opt.focussearch.points en próximas ejecuciones
+  opt.focussearch.points = 20
+)
+
+lrn <- makeMBOLearner(ctrl, obj_fun)
+
+surr_km <- makeLearner("regr.km", predict.type = "se", covtype = "matern3_2")
+
+run_md_ms <- mbo(obj_fun, learner = surr_km, control = ctrl, )
+print(run_md_ms)
+
+
+## ---------------------------
+
+
+# Experimento de explorar con la función sin tomar la muestra y con más parámetros. POner la ganancia y sacar el
+# AUC. Con este espacio queda definir la competencia de las variables.
+
+# Una función auxiliar para los experimentos
+experimento_rpart <- function(ds, semillas, cp = 0, ms = 20, mb = 1, md = 10) {
+  auc <- c()
+  for (s in semillas) {
+    set.seed(s)
+    in_training <- caret::createDataPartition(ds$clase_binaria, p = 0.70,
+                                              list = FALSE)
+    train  <-  ds[in_training, ]
+    test   <-  ds[-in_training, ]
+    train_sample <- tomar_muestra(train)
+    r <- modelo_rpart(train[train_sample,], test, 
+                      cp = cp, ms = ms, mb = mb, md = md)
+    auc <- c(auc, r)
+  }
+  mean(auc)
+}
+
+# Haremos 25 experimentos aleatorios, armamos las muestras de acuerdo a como
+# son las entradas de nuestro experimento.
+
+set.seed(semillas[1])
+cantidad_puntos <- 25
+espacio_busqueda_1 <- optimumLHS(cantidad_puntos, 2)
+
+# la primera columna es para el maxdepth, y la segunda para el minslip
+espacio_busqueda_1[, 1] <- floor(15 * espacio_busqueda_1[, 1]) + 4
+espacio_busqueda_1[, 2] <- floor(200 * espacio_busqueda_1[, 2]) + 2
+
+resultados_random_search <- data.table()
+for (e in 1:cantidad_puntos) {
+  r <- experimento_rpart(dataset, semillas,
+                         ms = espacio_busqueda_1[e, 2],
+                         md = espacio_busqueda_1[e, 1])
+  resultados_random_search <- rbindlist(list(resultados_random_search,
+                                             data.table(
+                                               md = espacio_busqueda_1[e, 1],
+                                               ms = espacio_busqueda_1[e, 2],
+                                               auc = r)
+  ))
+}
+
+print(resultados_random_search)
+ggplot(resultados_random_search, aes(x = md, y = ms, color = auc)) +
+  scale_color_gradient(low = "blue", high = "red") +
+  geom_point(aes(size = auc))
+
+
+## ----------------
