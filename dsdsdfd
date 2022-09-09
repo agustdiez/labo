@@ -1,0 +1,622 @@
+[33mcommit 9ec42b1572621425f6a487cdcf6a628c13a04b09[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: agustdiez <agustin.diez10@gmail.com>
+Date:   Wed Sep 7 00:00:43 2022 -0300
+
+    Primera prueba para agregar archivos
+
+[33mcommit 28f415ea8e40d2f99947d6a84d0371cc4aade2b3[m[33m ([m[1;31mupstream/main[m[33m)[m
+Author: Joaquín Ignacio Aramendía <samsagax@gmail.com>
+Date:   Sun Sep 4 19:26:01 2022 -0300
+
+    Add z500 overfitting canaries series scripts
+
+[33mcommit ee20ff13c816376920f182ae6e392589eabf532d[m
+Merge: 4c7426c 46e6483
+Author: DataMining en Economia y Finanzas <88461250+dmecoyfin@users.noreply.github.com>
+Date:   Mon Sep 5 12:33:34 2022 -0400
+
+    Merge pull request #5 from alejandrob17/main
+    
+    fifth class
+
+[33mcommit 46e648318e1c862c7dbff9b3abbd083c97397473[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Sun Sep 4 13:30:24 2022 -0300
+
+    fifth class
+
+[33mcommit 4c7426c2622a4768bfef7815139924c15e45bcd8[m
+Merge: 2e68b36 3478434
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Sep 1 16:50:23 2022 -0300
+
+    sync main to develop
+
+[33mcommit 347843470bec7381d87b663a15157a71861c205e[m[33m ([m[1;31mupstream/develop[m[33m)[m
+Merge: d40bbd6 9e45422
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Sep 1 16:50:09 2022 -0300
+
+    sync develop to feature/rpart_400
+
+[33mcommit 9e4542234aa4155e0f3eca8670d78e38f3bc0881[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Sep 1 16:49:55 2022 -0300
+
+    z412_rpart_binaria_aplicar.r
+
+[33mcommit a7cacbb1f101cc0ab03afc2c0f3b1e8fcb995534[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Sep 1 16:49:55 2022 -0300
+
+    z411_rpart_BO_binaria.r
+
+[33mcommit d40bbd657f7524aad68b077536e1f67e752a84dc[m
+Merge: 7d93e98 2e68b36
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Sep 1 16:03:54 2022 -0300
+
+    sync main to develop
+
+[33mcommit 2e68b361b7dfb77b204f6ddf3584a9840d03cd59[m
+Merge: b095ce7 7d93e98
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Wed Aug 31 08:55:25 2022 -0300
+
+    sync main to develop
+
+[33mcommit 7d93e98a33927fab697207f586a24cfd7092a2a8[m
+Merge: 4a0d8e1 975a847
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Wed Aug 31 08:55:22 2022 -0300
+
+    sync develop to feature/z321_hotfix
+
+[33mcommit 975a8478582adfaceadfe986d74b7dd7335b0c96[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Wed Aug 31 08:55:10 2022 -0300
+
+    z321_rpart_BO.r hotfix
+
+[33mcommit 4a0d8e1b08c12b1fa7af957291d265e24b17a6fc[m
+Merge: 5cde956 b095ce7
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Wed Aug 31 08:54:57 2022 -0300
+
+    sync main to develop
+
+[33mcommit b095ce7747cfa88eeec96f1f52d514d25614f45a[m
+Merge: d56baaa df1af62
+Author: Alejandro Bolaños <alejandro.daniel@gmail.com>
+Date:   Mon Aug 29 15:55:31 2022 -0300
+
+    Merge pull request #4 from alejandrob17/main
+    
+    fourth class
+
+[33mcommit df1af62bb756dbc8039b7de4e81d2051c94edc48[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Sun Aug 28 17:38:15 2022 -0300
+
+    fourth class
+
+[33mcommit d56baaa314982257add5c632a85e3e19cdbdf81f[m
+Merge: d05112a 5cde956
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 16:03:44 2022 -0300
+
+    sync main to develop
+
+[33mcommit 5cde9560e2cc779f6cfc48474d3cdc1d6dfd3cfd[m
+Merge: 4335c5d 78827d9
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 16:03:24 2022 -0300
+
+    sync develop to feature/rpart_300
+
+[33mcommit 78827d9dc9dd9f7f8c2b0a51774e37813c59cd67[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 16:03:08 2022 -0300
+
+    z321_rpart_BO.r
+
+[33mcommit 4335c5d1ae040b9e49e4174cb6fc187d2d482a2e[m
+Merge: eb7c685 d05112a
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 16:01:52 2022 -0300
+
+    sync main to develop
+
+[33mcommit d05112ab41ace197197fc1f741eb2825916bf963[m
+Merge: 26c0d6d eb7c685
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:49:53 2022 -0300
+
+    sync main to develop
+
+[33mcommit eb7c685c41a443cb74c63abd5a440f937c9de74f[m
+Merge: af75b12 19b8ff8
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:49:36 2022 -0300
+
+    sync develop to feature/zero2hero__02_01_02
+
+[33mcommit 19b8ff88d734d0ae8875510c8866708e229a8235[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:49:25 2022 -0300
+
+    zero2hero_0202.ipynb
+
+[33mcommit 0b5d5dc353d4c50580f09550c39bf0ba03341ddb[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:49:25 2022 -0300
+
+    zero2hero_0201.ipynb
+
+[33mcommit af75b121546e72802b94ab4fb1350af829e0908b[m
+Merge: 056d9a0 26c0d6d
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:49:03 2022 -0300
+
+    sync main to develop
+
+[33mcommit 26c0d6d4788074a53682e8f7b638532706f7a338[m
+Merge: 30b5adb 056d9a0
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:55 2022 -0300
+
+    sync main to develop
+
+[33mcommit 056d9a0d94f81ecd5dc794d7273cd951332b533a[m
+Merge: 54dc67a b3efcbd
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:44 2022 -0300
+
+    sync develop to feature/zero2hero_12_15
+
+[33mcommit b3efcbd126cf1cf1b3d24dee0c6d16fee09464f7[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:16 2022 -0300
+
+    zero2hero_0115.ipynb
+
+[33mcommit bee98fd076a1533f851ac171f5d34af579e07fdf[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:15 2022 -0300
+
+    zero2hero_0114.ipynb
+
+[33mcommit ac543869cca95f8d83a0fb5f567712b1c731b216[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:15 2022 -0300
+
+    zero2hero_0113.ipynb
+
+[33mcommit d91dfd62d1224bf8902f297fe142a97ece84bf6d[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:46:06 2022 -0300
+
+    zero2hero_0112.ipynb
+
+[33mcommit 54dc67a835c390556e94a24bb8cb3592fe6dae48[m
+Merge: 747576f 30b5adb
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 25 14:45:25 2022 -0300
+
+    sync main to develop
+
+[33mcommit 30b5adbda6e3321aa2e020dc843ef66e8378a627[m
+Merge: 4938f2f 6dc15d5
+Author: Alejandro Bolaños <alejandro.daniel@gmail.com>
+Date:   Mon Aug 22 14:36:14 2022 -0300
+
+    Merge pull request #2 from alejandrob17/main
+    
+    Monday 2022/08/22
+
+[33mcommit 6dc15d52587306b65dd1e1d81110e35f98d5436f[m
+Merge: 4938f2f ca765b6
+Author: Alejandro Bolaños <alejandro.daniel@gmail.com>
+Date:   Mon Aug 22 14:35:21 2022 -0300
+
+    Merge pull request #1 from alejandrob17/third_class
+    
+    Third class
+
+[33mcommit ca765b6a9aa8a0bc621c804e343f7392fbc77a5c[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Sun Aug 21 19:36:19 2022 -0300
+
+    HP w/ BO
+
+[33mcommit 4938f2f529987f17ef4c138b8393e300920cfcd3[m
+Merge: 926bf12 747576f
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:13:32 2022 -0300
+
+    sync main to develop
+
+[33mcommit 747576fa4f8ea4881870a19b6bb832b83ac3839e[m
+Merge: c9937ed 8de49b2
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:12:42 2022 -0300
+
+    sync develop to feature/CazaTalentos
+
+[33mcommit 8de49b2addcf90e9971adf03f0335cf128b6031a[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:52 2022 -0300
+
+    zintento_B.r
+
+[33mcommit f255acf02b70ca35cfee08b638b06a3d19ffdf66[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:52 2022 -0300
+
+    zintento_A_02.r
+
+[33mcommit 13b791a8ae9bf494d915ebca51d34cbead242551[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:51 2022 -0300
+
+    zintento_A_01.r
+
+[33mcommit b60d3bb0ea5cd68ab054940f08405e4cb9223091[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:51 2022 -0300
+
+    zbasket_07_fast.jl
+
+[33mcommit 9ed8977ccbc70d7411f6bdf0aa51a496a65fc31a[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:51 2022 -0300
+
+    zbasket_07_fast.py
+
+[33mcommit 47c01b0144ddea91e7007cfb93c74fbc34fbd044[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:50 2022 -0300
+
+    zbasket_07_fast.r
+
+[33mcommit 99b22b73bb96a094e46d7dd5dfac5bdcfec3ce5f[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:50 2022 -0300
+
+    zbasket_07.jl
+
+[33mcommit 7e36f2f79e996814376420e52f498f7d9de6d1cf[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:50 2022 -0300
+
+    zbasket_07.py
+
+[33mcommit 6d472e91e94699a8e2eb4ca891510327b6ca53b1[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:49 2022 -0300
+
+    zbasket_07.r
+
+[33mcommit 08cdade8d020c88c4f5432f96a8f57be55115e54[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:49 2022 -0300
+
+    zbasket_06.jl
+
+[33mcommit c1c40347fcc110c6c93846e681870d0f4af0dcac[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:48 2022 -0300
+
+    zbasket_06.py
+
+[33mcommit d4cb558b1c9efbba60cb50ee6afc466c2b376f18[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:48 2022 -0300
+
+    zbasket_06.r
+
+[33mcommit 0fe723fe82f597a4b7accc80c3d9c3d29dba311a[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:48 2022 -0300
+
+    zbasket_05.jl
+
+[33mcommit b43eb189d9b2d91e7ab2eb9f7279040b4f41d128[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:47 2022 -0300
+
+    zbasket_05.py
+
+[33mcommit 61772e310642a01a9973000d7c1748e1edc68295[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:47 2022 -0300
+
+    zbasket_05.r
+
+[33mcommit 20ceccd94b16ec86b9b8423c6d3db392ce672857[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:47 2022 -0300
+
+    zbasket_04.jl
+
+[33mcommit 189e1028432e340b1db635b9d949031f8de213fc[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:46 2022 -0300
+
+    zbasket_04.py
+
+[33mcommit b080001111662433d615f7aed1794233afc21b92[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:46 2022 -0300
+
+    zbasket_04.r
+
+[33mcommit c27589e51172299835855fa806a23b8d4653c7c7[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:46 2022 -0300
+
+    zbasket_03.jl
+
+[33mcommit a9f0f8979c99e3c8d0ffb0e10e5b5db0bcff6ca1[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:45 2022 -0300
+
+    zbasket_03.py
+
+[33mcommit 90ec7dd4fd29b49abab7e9a713696049bd203458[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:45 2022 -0300
+
+    zbasket_03.r
+
+[33mcommit f45c4a03c28eac908d9bd0c338c136e11d65c331[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:45 2022 -0300
+
+    zbasket_02.jl
+
+[33mcommit 9448036200d9975d85f7e3f7d1b17c77f74ae465[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:44 2022 -0300
+
+    zbasket_02.py
+
+[33mcommit 7fd0fa5651ebf790c260b103bc13f2697f1b1e45[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:44 2022 -0300
+
+    zbasket_02.r
+
+[33mcommit c9937eddb84fb41d7b65b4c5bfdf37358005b689[m
+Merge: 7a8678b 926bf12
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Sat Aug 20 14:11:10 2022 -0300
+
+    sync main to develop
+
+[33mcommit 926bf127de1bb3a246d2f783046f84a103c9f8d6[m
+Merge: 1f89df9 7a8678b
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:48:10 2022 -0300
+
+    sync main to develop
+
+[33mcommit 7a8678be7770f10f84070e1b509504147891b2ad[m
+Merge: 1f89df9 51eb96f
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:45 2022 -0300
+
+    sync develop to feature/rpart200
+
+[33mcommit 51eb96f30715166b9c4c0076e62602ab3c8cc597[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:05 2022 -0300
+
+    z238_mejormodelo_analisis.r
+
+[33mcommit be5a268307a3d4826cda968a409ac4243a795dff[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:04 2022 -0300
+
+    z241_gridsearch_esqueleto.r
+
+[33mcommit a441a61d1efe3a7bc8c50783b1467a6f2758d7e2[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:04 2022 -0300
+
+    z232_mejormodelo_PP.r
+
+[33mcommit 0d50937759b5615fdeb98fb237832b04654aaeb4[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:04 2022 -0300
+
+    z231_mejormodelo.r
+
+[33mcommit c566fef671892df70b408d18e4f65cb46046d50c[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:04 2022 -0300
+
+    z222_traintest_montecarlo.r
+
+[33mcommit ecdac4c5862aecf1f10d956145261689ac3a47da[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Aug 18 14:47:03 2022 -0300
+
+    z211_traintest_estratificado.r
+
+[33mcommit 1f89df91c300b67b3855780dc8a6aaaa8cdbc877[m
+Merge: 53a90ca 3ee6055
+Author: DataMining en Economia y Finanzas <88461250+dmecoyfin@users.noreply.github.com>
+Date:   Wed Aug 17 22:20:26 2022 -0300
+
+    Merge pull request #1 from alejandrob17/main
+    
+    clase 2022/8/17
+
+[33mcommit 3ee60553ecd1286e2518b83071a54522419d0750[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Wed Aug 17 22:16:27 2022 -0300
+
+    add slides
+
+[33mcommit 948c8063df5172930f912f6d9790189412f5012c[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Tue Aug 16 20:19:34 2022 -0300
+
+    Ivo feedback
+
+[33mcommit 6cedeacca9b4dab6497e7b0df491e14c614d0f16[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Mon Aug 15 12:17:58 2022 -0300
+
+    typos
+
+[33mcommit 79d7f58214731ae73901f01aaab9fed89d81a38c[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Mon Aug 15 12:12:31 2022 -0300
+
+    small fixes
+
+[33mcommit 4709a1fdbc13d1fa994147b6e5d9ae9b6739d111[m
+Author: alejandrob17 <alejandro.daniel@gmail.com>
+Date:   Mon Aug 15 11:49:05 2022 -0300
+
+    second class
+
+[33mcommit 53a90ca2f46b24cb73f2cdbe31bd1c959846fe8a[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 6e214bd aae3555
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:56 2022 -0300
+
+    sync main to develop
+
+[33mcommit aae35550e66c3035bf006ed1e08d29a70c585b41[m
+Merge: 20ee089 fecc72f
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:28 2022 -0300
+
+    sync develop to feature/zero2hero_01_11
+
+[33mcommit fecc72f40edfb99a29466cf71e0bf95edbeb3890[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:08 2022 -0300
+
+    zero2hero_0111.ipynb
+
+[33mcommit d2d3b9e91dd8401dc2c74f34376a4d96bc387862[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:08 2022 -0300
+
+    zero2hero_0110.ipynb
+
+[33mcommit 2da901d7e9042883f4b61257cb61f53515a290bb[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:07 2022 -0300
+
+    zero2hero_0109.ipynb
+
+[33mcommit 7273ed0d82a2b4504fa84e193a13da7ab71bd27f[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:07 2022 -0300
+
+    zero2hero_0108.ipynb
+
+[33mcommit bf482aff2fc13880c4349b7d7544d3b1fe5ee41c[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:07 2022 -0300
+
+    zero2hero_0107.ipynb
+
+[33mcommit 7ba8501f2a6fdc54a2279de67685dc58cbbe5aa0[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:06 2022 -0300
+
+    zero2hero_0106.ipynb
+
+[33mcommit 13c22dad30521d8fead50c956aec49ae50557794[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:06 2022 -0300
+
+    zero2hero_0105.ipynb
+
+[33mcommit 2962c95802d63d142aa1d8eb8332811a53cba6af[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:06 2022 -0300
+
+    zero2hero_0104.ipynb
+
+[33mcommit a65d135e3653ad81056dfad3688d54c005d7294d[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:05 2022 -0300
+
+    zero2hero_0103.ipynb
+
+[33mcommit def9fb3fb0fde31bb27c809eeba14645b3201c12[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:35:05 2022 -0300
+
+    zero2hero_0102.ipynb
+
+[33mcommit e4c2421aef408ccf7a41289e154318860d496fde[m
+Author: Laboratorio de Implementacion <88951773+labo-imp@users.noreply.github.com>
+Date:   Mon Aug 8 01:34:54 2022 -0300
+
+    zero2hero_0101.ipynb
+
+[33mcommit 6e214bd8894c4e7c3f80ab5595dea4ce0546d741[m
+Merge: df79ee8 20ee089
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:57:05 2022 -0300
+
+    sync main to develop
+
+[33mcommit 20ee0895f0b1799aeb621543a387e12342b6b18e[m
+Merge: 7500195 8ebb46f
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:56:45 2022 -0300
+
+    sync develop to feature/z102_PrimerModelo
+
+[33mcommit 8ebb46f13fb2191fdc57a10c013420c10fc228ec[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:54:12 2022 -0300
+
+    z102_PrimerModelo.ipynb
+
+[33mcommit df79ee86f37bb3c248ddff5284ad7e941f969448[m
+Merge: 39d0b93 7500195
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:38:00 2022 -0300
+
+    sync main to develop
+
+[33mcommit 7500195cd758b829dc17702a754b2157b7688330[m
+Merge: 12e215a 2093049
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:37:03 2022 -0300
+
+    sync develop to feature/z101_PrimerModelo
+
+[33mcommit 20930497b26db2d235417ba6389283acf443f7c3[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:32:48 2022 -0300
+
+    z101_PrimerModelo.R
+
+[33mcommit 12e215aae7c0f98d6bc7887e1ec1ad0eafa3cd7f[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Fri Aug 5 03:16:27 2022 -0300
+
+    develop empty
+
+[33mcommit 39d0b93462fd93a69af143a8530345f6a73e8a57[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Jul 28 00:09:53 2022 -0300
+
+    .gitignore
+
+[33mcommit f534c6ac343c0823d43157804052782962bbf7a5[m
+Author: GustavoDenicolay <gustavo.denicolay@gmail.com>
+Date:   Thu Jul 28 00:09:15 2022 -0300
+
+    .gitattributes

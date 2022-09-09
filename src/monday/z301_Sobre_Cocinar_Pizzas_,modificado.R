@@ -26,7 +26,11 @@ require("mlrMBO")
 # Poner la carpeta de la materia de SU computadora local
 setwd("D:/economia_finanzas")
 # Poner sus semillas
-semillas <- c(17, 19, 23, 29, 31)
+semillas <- c(732497,
+              681979,
+              281887,
+              936659,
+              692089)
 
 # Cargamos el dataset
 dataset <- fread("./datasets/competencia1_2022.csv")
