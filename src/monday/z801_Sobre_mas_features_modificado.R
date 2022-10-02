@@ -8,6 +8,11 @@
 ## <Insert a smart quote here about more is better>.
 ## --- Ale
 
+#GoogleCloud
+#nohup Rscript 
+
+
+
 rm(list = ls())
 gc(verbose = FALSE)
 
@@ -71,6 +76,8 @@ colnames(new_features)[150:173]
 
 xgb.plot.tree(colnames(new_features), xgb_model, trees = 0)
 
+## Cada una de las hojas es una variable. Si cae dentro del árbol es un 1 y si no un 0.
+## Las variables V"algo" surgen con esta línea. Son las definiciones que se hacen sobre el árbol.
 
 ## ---------------------------
 ## Step 5: Viendo cuán importantes son las nuevas variables, pero con un LGBM!!!
@@ -100,12 +107,14 @@ param_fe2 <- list(
                 colsample_bynode = 0.8,
                 learning_rate = 1,
                 max_depth = 3, # <--- IMPORTANTE CAMBIAR
-                num_parallel_tree = 10, # <--- IMPORTANTE CAMBIAR
+                num_parallel_tree = 10, # <--- IMPORTANTE CAMBIAR ## Es un Random Forest
                 subsample = 0.8,
                 objective = "binary:logistic"
             )
 
-xgb_model2 <- xgb.train(params = param_fe2, data = dtrain, nrounds = 1)
+xgb_model2 <- xgb.train(params = param_fe2, data = dtrain, nrounds = 1) ## nrounds = 1. Por cada ronda se está haciendo una método de bagging (random forest)
+## A cada paso de XGBoost, se reduce la variabilidad final.
+
 
 # Veamos un paso a paso
 new_features2 <- xgb.create.features(model = xgb_model2, data.matrix(marzo))
@@ -130,6 +139,9 @@ lgb.importance(mlgb2)$Feature
 # Filtrando las features que entraron
 ## Preguntas
 ## - ¿Entraron todas las variables?
+
+## Entraron algunas variables. No todas. Sirve para dar la pauta de cual incluir
+
 
 ## ---------------------------
 ## Step 7: Sumando canaritos
@@ -175,3 +187,9 @@ idx[list_canaritos]
 # En que posiciones aprecieron el resto de las variables generadas
 list_new_features <- grepl("V\\d+", var_importance)
 idx[list_new_features]
+
+## Todos los canarios que
+
+## Cambio con Feature Engineering
+
+## Si se carga el FE BASICO de gustavo,
