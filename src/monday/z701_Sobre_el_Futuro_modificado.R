@@ -124,3 +124,4 @@ ggplot(leaderboad, aes(x = envio, y = valor, color = board)) + geom_line()
 ## en el leaderboard público que le de una estrategia para elegir la cantidad
 ## adecuada para ganar maximizar la ganancia del privado.
 
+
