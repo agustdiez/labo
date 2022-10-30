@@ -363,8 +363,8 @@ dtrain  <- lgb.Dataset( data=    data.matrix( dataset[ fold_train==1, campos_bue
                       )
 
 
-kvalidate  <- FALSE
-ktest  <- FALSE
+kvalidate  <- TRUE
+ktest  <- TRUE
 kcrossvalidation  <- TRUE
 
 #Si hay que hacer validacion
