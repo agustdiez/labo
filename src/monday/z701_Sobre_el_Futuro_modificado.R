@@ -23,7 +23,7 @@ require("ggplot2")
 require("lightgbm")
 
 # Poner la carpeta de la materia de SU computadora local
-setwd("/home/aleb/dmeyf2022")
+setwd("D:/OneDrive/Personal/Maestria Data Mining/economia_finanzas")
 # Poner sus semillas
 semillas <- c(17, 19, 23, 29, 31)
 
@@ -75,17 +75,17 @@ length(unique(marzo$pred))
 
 # Simulamos un Leaderboard público:
 set.seed(semillas)
-split <- caret::createDataPartition(marzo$clase_ternaria, p = 0.50, list = FALSE)
+split <- caret::createDataPartition(marzo$clase_ternaria, p = 0.95, list = FALSE)
 
 # Vemos la cantidad de casos que estaríamos mandando:clase_ternaria
 sum(marzo$pred > 0.025) # En mi caso dice que estaría mandando 7744
 
 # Y obtendríamos una ganancia de
 # Privado
-sum((marzo$pred[split] > 0.025) * ifelse(marzo$clase_ternaria[split] == "BAJA+2", 78000, -2000)) / 0.5
+sum((marzo$pred[split] > 0.025) * ifelse(marzo$clase_ternaria[split] == "BAJA+2", 78000, -2000)) / 0.95
 
 # Público
-sum((marzo$pred[-split] > 0.025) * ifelse(marzo$clase_ternaria[-split] == "BAJA+2", 78000, -2000)) / 0.5
+sum((marzo$pred[-split] > 0.025) * ifelse(marzo$clase_ternaria[-split] == "BAJA+2", 78000, -2000)) / 0.05
 
 # Pero... que pasa si mandamos otra cantidad de casos?
 # Vamos a mandar los N mejores casos, de a separaciones de M
@@ -99,19 +99,19 @@ setorder(marzo, cols = -pred)
 
 # PROBAR MULTIPLES VALORES
 set.seed(semillas[3])
-m <- 500
-f <- 2000
-t <- 12000
+m <- 100
+f <- 6000
+t <- 14000
 
 leaderboad <- data.table()
-split <- caret::createDataPartition(marzo$clase_ternaria, p = 0.50, list = FALSE)
+split <- caret::createDataPartition(marzo$clase_ternaria, p = 0.95, list = FALSE)
 marzo$board[split] <- "privado"
 marzo$board[-split] <- "publico"
 for (s in seq(f, t, m)) {
     privado <- marzo[1:s, sum(ifelse(board == "privado",
-        ifelse(clase_ternaria == "BAJA+2", 78000, -2000), 0)) / 0.5]
+        ifelse(clase_ternaria == "BAJA+2", 78000, -2000), 0)) / 0.95]
     publico <- marzo[1:s, sum(ifelse(board == "publico",
-        ifelse(clase_ternaria == "BAJA+2", 78000, -2000), 0)) / 0.5]
+        ifelse(clase_ternaria == "BAJA+2", 78000, -2000), 0)) / 0.05]
     leaderboad <- rbindlist(list(leaderboad,
                         data.table(envio = s, board = "privado", valor = privado),
                         data.table(envio = s, board = "publico", valor = publico)
@@ -123,5 +123,9 @@ ggplot(leaderboad, aes(x = envio, y = valor, color = board)) + geom_line()
 ## ACTIVE LEARNING: Juegue con los parámetros y busque si hay alguna información
 ## en el leaderboard público que le de una estrategia para elegir la cantidad
 ## adecuada para ganar maximizar la ganancia del privado.
+
+
+
+
 
 
