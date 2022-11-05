@@ -1,4 +1,4 @@
-#este script necesita para correr en Google Cloud
+image.png#este script necesita para correr en Google Cloud
 # RAM     16 GB
 # vCPU     4
 # disco  256 GB
