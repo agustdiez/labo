@@ -1,0 +1,7 @@
+## Problemas relacionados al semillerío
+
+# Ensamblar 2 o 3 modelos es más que suficiente.
+
+# Compactar el semillerío con un modelo de regresión logística u otro modelo. La regresión logística no tiene aleatoriedad asociada. Hacer stack del vector de promedios del semillerío
+con el vector que de la regresión logistica
+
