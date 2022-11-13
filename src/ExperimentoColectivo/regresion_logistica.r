@@ -1,5 +1,5 @@
 #Se corre en la nube
-
+require("data.table")
 
 #Parametros del script
 PARAM <- list()
@@ -42,19 +42,20 @@ dfuture <- fread( arch_future )
 
 #defino la clase binaria
 dataset[ , clase01 := ifelse( clase_ternaria %in% c("BAJA+1","BAJA+2"), 1, 0 )  ]
+dfuture[ , clase01 := NA ]
 
-campos_buenos  <- setdiff( colnames(dataset), c( "clase_ternaria", "clase01") )
-
+campos_buenos  <- setdiff( colnames(dataset), c( "clase_ternaria") )
+print(campos_buenos)
 
 # Modelo de regresión logistica
 
 # modelo de regresión logística 
-model_glm <- glm(data = dataset,formula = clase01 ~ ., family = 'gaussian')]
+model_glm <- glm(data = dataset[,campos_buenos, with=FALSE ],formula = clase01 ~ ., family = 'binomial')
 
 
 #genero la prediccion, Scoring
 prediccion  <- predict( model_glm ,
-                        data.matrix( dfuture[ , campos_buenos, with=FALSE ] ),type="response" )
+                       dfuture[,campos_buenos, with=FALSE ],type="response" )
 
 tb_prediccion  <- dfuture[  , list( numero_de_cliente, foto_mes ) ]
 tb_prediccion[ , prob_glm := prediccion ]
@@ -70,6 +71,8 @@ fwrite( tb_prediccion,
 #Extracción del mes 202107 real
 
 #cargo el dataset de donde extraigo la clase y los IDs
+setwd("~/buckets/b1/")
+
 dataset  <- fread( PARAM$input$dataset )
 
 dataset_202107 <- dataset[ foto_mes %in% PARAM$train$test , ]
