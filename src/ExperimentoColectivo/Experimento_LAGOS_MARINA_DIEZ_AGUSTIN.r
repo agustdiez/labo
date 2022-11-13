@@ -56,3 +56,9 @@ fwrite( dataset,
           file= nom_pred,
           sep= "\t" )
 
+
+### Mezclo todo (LGBM,logistica y real)
+
+
+
+
