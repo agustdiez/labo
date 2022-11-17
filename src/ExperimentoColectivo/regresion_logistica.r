@@ -71,7 +71,10 @@ fwrite( tb_prediccion,
 #Extracción del mes 202107 real
 
 #cargo el dataset de donde extraigo la clase y los IDs
-setwd("~/buckets/b1/")
+
+
+
+setwd("D:/OneDrive/Personal/Maestria Data Mining/economia_finanzas")
 
 dataset  <- fread( PARAM$input$dataset )
 
