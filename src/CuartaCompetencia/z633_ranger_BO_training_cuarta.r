@@ -147,7 +147,8 @@ EstimarGanancia_ranger  <- function( x )
 #Aqui se debe poner la carpeta de la computadora local
 setwd("~/buckets/b1/")   #Establezco el Working Directory
 
-
+#Parametros del script
+PARAM  <- list()
 PARAM$exp_input  <- "TS9320_TRAINING201920202021_CUARTA"
 #cargo el dataset donde voy a entrenar
 #esta en la carpeta del exp_input y siempre se llama  dataset_training.csv.gz
